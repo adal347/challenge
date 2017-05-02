@@ -1,0 +1,25 @@
+print('Test 1\n')
+
+  teamM = Team('Celtics', 'Boston', 3, 93465328, 7, 0, 3, 6)
+  teamN = Team('Bulls', 'Chicago', 12, 92571386, 7, 1, 2, 9)
+  checkWinner(teamM, teamN) # Success Winner -> Celtics
+
+  teamC = Team('Wizards', 'Washington', 7, 101312813, 5, 0, 3, 10)
+  teamD = Team('Hawks', 'Atlanta', 9, 96294035, 6, 1, 2, 5)
+  checkWinner(teamC, teamD) # Fail Winner -> Wizards
+
+  teamE = Team('Raptors', 'Toronto', 5, 108699969, 8, 0, 3, 2)
+  teamF = Team('Bucks', 'Milwaukee', 11, 93818786, 5, 1, 2, 12)
+  checkWinner(teamE, teamF) # Success Winner -> Raptors Toronto
+
+  teamG = Team('Clippers', 'Los Angeles', 4, 116217504, 8, 0, 3, 4)
+  teamH = Team('Jazz', 'Utah', 6, 80498193, 7, 1, 2, 11)
+  checkWinner(teamG, teamH) # Success Winner -> LA Clippers
+
+  teamI = Team('Rockets', 'Houston', 2, 90738581, 5, 1, 4, 8)
+  teamJ = Team('Thunder', 'Ocklahoma City', 8, 91380089, 6, 0, 1, 3)
+  checkWinner(teamI, teamJ) # Success Winner -> Houston Rockets
+
+  teamK = Team('Spurs', 'San Antonio', 1, 108574574, 5, 0, 3, 1)
+  teamL = Team('Grizzles', 'Memphis', 10, 110981223, 3, 1, 2, 7)
+  checkWinner(teamK, teamL) # Success Winner -> SAS
