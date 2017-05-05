@@ -74,3 +74,64 @@ def checkWinner(teamA, teamB):
         print('Winner: ' + teamA.sede + ' ' + teamA.name)
 
 if __name__ == '__main__':
+    print('\nTest 2\n')
+
+    teamA = Team('Raptors', 'Toronto', 5, 108699969, 8, 0, 1, 4)
+    teamB = Team('Cavaliers', 'Cleveland', 5, 127511146, 6, 1, 4, 3)
+    checkWinner(teamA, teamB) # Success Winner -> CLE
+
+    teamA = Team('Celtics', 'Boston', 4, 93465328, 8, 1, 3, 7)
+    teamB = Team('Wizards', 'Washington', 9, 101312813, 6, 0, 2, 17)
+    checkWinner(teamA, teamB) # Success Winner -> Boston
+
+    teamA = Team('Warriors', 'Golden State', 1, 101725630, 9, 1, 4, 1)
+    teamB = Team('Jazz', 'Utah', 5, 80498193, 6, 0, 1, 19)
+    checkWinner(teamA, teamB) # Success Winner -> Warriors
+
+    teamA = Team('Spurs', 'San Antonio', 2, 108574574, 5, 1, 4, 2)
+    teamB = Team('Rockets', 'Houston', 3, 90738581, 7, 0, 1, 17)
+    checkWinner(teamA, teamB) # Fail Winner -> Rockets
+
+    print('Test 1\n')
+
+    teamM = Team('Celtics', 'Boston', 3, 93465328, 7, 0, 3, 6)
+    teamN = Team('Bulls', 'Chicago', 12, 92571386, 7, 1, 2, 9)
+    checkWinner(teamM, teamN) # Success Winner -> Celtics
+
+    teamC = Team('Wizards', 'Washington', 7, 101312813, 5, 0, 3, 10)
+    teamD = Team('Hawks', 'Atlanta', 9, 96294035, 6, 1, 2, 5)
+    checkWinner(teamC, teamD) # Fail Winner -> Wizards
+
+    teamE = Team('Raptors', 'Toronto', 5, 108699969, 8, 0, 3, 2)
+    teamF = Team('Bucks', 'Milwaukee', 11, 93818786, 5, 1, 2, 12)
+    checkWinner(teamE, teamF) # Success Winner -> Raptors Toronto
+
+    teamG = Team('Clippers', 'Los Angeles', 4, 116217504, 8, 0, 3, 4)
+    teamH = Team('Jazz', 'Utah', 6, 80498193, 7, 1, 2, 11)
+    checkWinner(teamG, teamH) # Success Winner -> LA Clippers
+
+    teamI = Team('Rockets', 'Houston', 2, 90738581, 5, 1, 4, 8)
+    teamJ = Team('Thunder', 'Ocklahoma City', 8, 91380089, 6, 0, 1, 3)
+    checkWinner(teamI, teamJ) # Success Winner -> Houston Rockets
+
+    teamK = Team('Spurs', 'San Antonio', 1, 108574574, 5, 0, 3, 1)
+    teamL = Team('Grizzles', 'Memphis', 10, 110981223, 3, 1, 2, 7)
+    checkWinner(teamK, teamL) # Success Winner -> SAS
+
+    print('\nPrediction\n')
+
+    teamA = Team('Raptors', 'Toronto', 5, 108699969, 7, 0, 1, 4)
+    teamB = Team('Cavaliers', 'Cleveland', 5, 127511146, 6, 1, 4, 3)
+    checkWinner(teamA, teamB) # Predict Winner -> Cleveland
+
+    teamA = Team('Celtics', 'Boston', 4, 93465328, 8, 0, 4, 7)
+    teamB = Team('Wizards', 'Washington', 9, 101312813, 5, 1, 1, 17)
+    checkWinner(teamA, teamB) # Predict Winner -> Boston
+
+    teamA = Team('Warriors', 'Golden State', 1, 101725630, 9, 1, 4, 1)
+    teamB = Team('Jazz', 'Utah', 5, 80498193, 6, 0, 1, 19)
+    checkWinner(teamA, teamB) # Predict Winner -> Golden State
+
+    teamA = Team('Spurs', 'San Antonio', 2, 108574574, 4, 1, 3, 2)
+    teamB = Team('Rockets', 'Houston', 3, 90738581, 7, 0, 2, 17)
+    checkWinner(teamA, teamB) # Predict Winner -> San Antonio

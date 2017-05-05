@@ -1,7 +1,7 @@
 # Basketball Games Prediction - Challenge
 
 For many years the humanity tried to predict different aspects of the world.
-Predict weather, natural disasters, lotery and games is fundamental
+Predict weather, natural disasters, lottery and games is fundamental
 for us. We predict future to understand it and react it. For this program we
 want to predict, with some characteristics, if we can know the result of a
 game that has not yet disputed.
@@ -19,7 +19,7 @@ game that has not yet disputed.
 
 The reason of why we want to predict basketball games is because is very helpful.
 For Technical Director predict basketball games will be useful
-to create a intese training or sistematic training for the next game,
+to create an intense training or systematic training for the next game,
 depending of the result of the prediction.
 
 Also, for obvious reason, predict basketball games is a good help
@@ -36,29 +36,29 @@ To use this branch, as I said before we need to know all the data that we can us
 in the way to predict basketball games. In the references at the end you can see
 a bunch of data to explore.
 
-After we see all the data and we know whar aspects will help to predict a basketball
+After we see all the data and we know what aspects will help to predict a basketball
 game in a successful way. For this program I choose:
 
-* The position in the season (In this case is in season 2017)-
+* The position in the season.
 * The budget of the team in the season.
 * Last ten games of the team (If won or lose).
 * If the team play as local or not.
 * The last five games played with the rival.
 * The position of the last season.
 
-To predict basketball games we need a algorithm that use the parameters to obtain
+To predict basketball games we need an algorithm that use the parameters to obtain
 a good results in the evaluations. The function that is used to evaluate this is
-a clasic algorithm in Artificial Intelligence. The search system with adversary.
+a classic algorithm in Artificial Intelligence. The search system with adversary.
 
 Finally the function is:
 
 ```shell
- funtion = sumatory( probabilty(i) * value(i))
+ function = summatory( probability(i) * value(i))
 ```
 
-* Function: The porcentage of the team to get the vicrory.
+* Function: The percentage of the team to get the victory.
 * i: The characteristics that is evaluated.
-* probabilty of i: the weight of the factor i.
+* probability of i: the weight of the factor i.
 * value of i: the value of each characteristic (i).
 
 The values in the program are:
@@ -70,7 +70,7 @@ The values in the program are:
 * Last five games versus the rival = 0.25
 * Position of the last season = 0.25
 
-To obtain the probability of each characteristic is more-less the same for eachone
+To obtain the probability of each characteristic is more-less the same for each one
 
 ```shell
 
@@ -78,7 +78,7 @@ Probability = TeamA(i)/(TeamB(i) + TeamA(i))
 
 ```
 
-After calculate all the characteristics we compare the porcentage of the teams
+After calculate all the characteristics we compare the percentage of the teams
 and see who will win.
 
 ## Install
@@ -99,13 +99,13 @@ Also you need to have python 3 to run it the run file.
   # After you clone the repository, you move to the repository
   cd challenge
 
-  # Run the run file, if you don't have permises you need to do
+  # Run the run file, if you don't have permissions you need to do
   chmod 755 run
 
-  # If you have the permises
+  # If you have the permissions
   ./run < test/prediction.in
 ```
-After run the run file you can see the prediction of the data that is recieved.
+After run the run file you can see the prediction of the data that is received.
 
 ## Test
 

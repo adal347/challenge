@@ -1,16 +1,19 @@
-    print('\nPrediction\n')
-    teamA = Team('Raptors', 'Toronto', 5, 108699969, 7, 0, 1, 4)
-    teamB = Team('Cavaliers', 'Cleveland', 5, 127511146, 6, 1, 4, 3)
-    checkWinner(teamA, teamB) # Predict Winner -> Cleveland
+@Team A
+Raptors, Toronto, 5, 108699969, 7, 0, 1, 4
+@Team B
+Cavaliers, Cleveland, 5, 127511146, 6, 1, 4, 3
 
-    teamA = Team('Celtics', 'Boston', 4, 93465328, 8, 0, 4, 7)
-    teamB = Team('Wizards', 'Washington', 9, 101312813, 5, 1, 1, 17)
-    checkWinner(teamA, teamB) # Predict Winner -> Boston
+@Team A
+Celtics, Boston, 4, 93465328, 8, 0, 4, 7
+@Team B
+Wizards, Washington, 9, 101312813, 5, 1, 1, 17
 
-    teamA = Team('Warriors', 'Golden State', 1, 101725630, 9, 1, 4, 1)
-    teamB = Team('Jazz', 'Utah', 5, 80498193, 6, 0, 1, 19)
-    checkWinner(teamA, teamB) # Predict Winner -> Golden State
+@Team A
+Warriors, Golden State, 1, 101725630, 9, 1, 4, 1
+@Team B
+Jazz, Utah, 5, 80498193, 6, 0, 1, 19
 
-    teamA = Team('Spurs', 'San Antonio', 2, 108574574, 4, 1, 3, 2)
-    teamB = Team('Rockets', 'Houston', 3, 90738581, 7, 0, 2, 17)
-    checkWinner(teamA, teamB) # Predict Winner -> San Antonio
+@Team A
+Spurs, San Antonio, 2, 108574574, 4, 1, 3, 2
+@Team B
+Rockets, Houston, 3, 90738581, 7, 0, 2, 17
