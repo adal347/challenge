@@ -1,22 +1,19 @@
 # Basketball Games Prediction - Challenge
 
-# Table Of Contents
-
-1. [Introduction](#introduction)
-2. [Justification](#justification)
-3. [How to Use](#how)
-  1. [Install](#install)
-  2. [Run](#run)
-  3. [Create Test](#create)
-2. [References](#references)
-
-# Introduction
-
 For many years the humanity tried to predict different aspects of the world.
 Predict weather, natural disasters, lotery and games is fundamental
 for us. We predict future to understand it and react it. For this program we
 want to predict, with some characteristics, if we can know the result of a
 game that has not yet disputed.
+
+# Table Of Contents
+
+1. [Justification](#justification)
+2. [How to Use](#how)
+  1. [Install](#install)
+  2. [Run](#run)
+  3. [Create Test](#create)
+3. [References](#references)
 
 # Justification
 
