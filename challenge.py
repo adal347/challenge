@@ -67,8 +67,10 @@ def checkWinner(teamA, teamB):
     lastVsProbability(teamA, teamB)
     lastSeasonProbability(teamA, teamB)
     if teamA.finalProbability < teamB.finalProbability:
+        print('Game ' + teamA.name + ' vs ' + teamB.Name)
         print('Winner: ' + teamB.sede + ' ' + teamB.name)
     else:
+        print('Game ' + teamA.name + ' vs ' + teamB.Name)
         print('Winner: ' + teamA.sede + ' ' + teamA.name)
 
 if __name__ == '__main__':
